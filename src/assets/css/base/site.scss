@@ -1,0 +1,68 @@
+// smooth scrolling
+html {
+	scroll-behavior: smooth;
+	min-height: 100vh;
+}
+
+body {
+	position: relative;
+	overflow-y: scroll;
+
+	[x-cloak] {
+		visibility: hidden;
+	}
+
+	[x-cloak="hidden"] {
+		display: none;
+	}
+}
+
+// Focus styles - :focus-visible if supported, .focus-visible if not
+:focus {
+	outline: 2px dashed var(--focus-colour, #000);
+	outline-offset: 0.25rem;
+
+	&:not(:focus-visible) {
+		outline: none;
+	}
+}
+
+.outline-inner {
+	outline-offset: -0.25rem;
+}
+
+// Scrollbar styles
+html {
+	--scrollbar-bg: #fff;
+	--scrollbar-thumb: #000;
+}
+// firefox and future standard
+* {
+	scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-bg);
+	scrollbar-width: thin;
+}
+// webkit
+::-webkit-scrollbar {
+	width: 0.75rem;
+}
+::-webkit-scrollbar-track {
+	background: var(--scrollbar-bg);
+}
+::-webkit-scrollbar-thumb {
+	border: 3px solid var(--scrollbar-bg);
+	border-radius: 0.4rem;
+	background-color: var(--scrollbar-thumb);
+}
+
+// Make sure anything disabled is not selectable or clickable
+[disabled] {
+	pointer-events: none;
+	user-select: none;
+}
+
+// add scroll margin to potentially targeted elements
+[id] {
+	$scroll-margin: 7rem;
+	scroll-margin-top: $scroll-margin;
+	scroll-snap-margin-top: $scroll-margin;
+}

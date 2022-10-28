@@ -1,0 +1,35 @@
+{
+  "name": "async-alpine-website",
+  "version": "0.1.0",
+  "description": "",
+  "browserslist": [
+    "> 0.5%",
+    "not IE 11"
+  ],
+  "scripts": {
+    "dev": "run-s clean serve",
+    "serve": "npx @11ty/eleventy --serve",
+    "watch": "npx @11ty/eleventy --watch",
+    "build": "npx @11ty/eleventy",
+    "bench": "DEBUG=Eleventy:Benchmark* npx @11ty/eleventy",
+    "clean": "rimraf _dist",
+    "fonts": "npx glyphhanger --subset=\"public/fonts/*.ttf\" --US_ASCII --formats=woff2"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^2.0.0-canary.13",
+    "@11ty/eleventy-img": "^2.0.1",
+    "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
+    "@11ty/eleventy-plugin-vite": "^2.0.0-canary.1",
+    "autoprefixer": "^10.4.7",
+    "cssnano": "^5.1.12",
+    "cssremedy": "^0.1.0-beta.2",
+    "focus-visible": "^5.2.0",
+    "markdown-it": "^13.0.1",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.2",
+    "sailwind": "^0.4.0",
+    "sass": "^1.53.0",
+    "tailwindcss": "^3.2.1",
+    "vite": "^3.0.0"
+  }
+}
