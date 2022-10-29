@@ -1,0 +1,94 @@
+[
+	{
+		"title": "Quick Start",
+		"url": "/docs/"
+	},
+	{
+		"title": "Installation",
+		"url": "/docs/install/",
+		"subitems": [
+			{
+				"title": "CDN",
+				"url": "/docs/install/#cdn"
+			},
+			{
+				"title": "NPM",
+				"url": "/docs/install/#npm"
+			}
+		]
+	},
+	{
+		"title": "Usage",
+		"url": "/docs/usage/",
+		"subitems": [
+			{
+				"title": "Inline",
+				"url": "/docs/usage/#inline"
+			},
+			{
+				"title": "Data",
+				"url": "/docs/usage/#data"
+			},
+			{
+				"title": "URL",
+				"url": "/docs/usage/#url"
+			},
+			{
+				"title": "Alias",
+				"url": "/docs/usage/#alias"
+			}
+		]
+	},
+	{
+		"title": "Strategies",
+		"url": "/docs/strategies/",
+		"subitems": [
+			{
+				"title": "Eager",
+				"url": "/docs/strategies/#eager"
+			},
+			{
+				"title": "Idle",
+				"url": "/docs/strategies/#idle"
+			},
+			{
+				"title": "Visible",
+				"url": "/docs/strategies/#visible"
+			},
+			{
+				"title": "Media",
+				"url": "/docs/strategies/#media"
+			},
+			{
+				"title": "Event",
+				"url": "/docs/strategies/#event"
+			},
+			{
+				"title": "Combined",
+				"url": "/docs/strategies/#combined"
+			}
+		]
+	},
+	{
+		"title": "Advanced",
+		"url": "/docs/advanced/",
+		"subitems": [
+			{
+				"title": "Delayed Initialisation",
+				"url": "/docs/advanced/#delayed-init"
+			},
+			{
+				"title": "Advanced Options",
+				"url": "/docs/advanced/#options"
+			}
+		]
+	},
+	{
+		"title": "Credits & Contributing",
+		"url": "/docs/contributing"
+	},
+	{
+		"title": "License",
+		"url": "/docs/license"
+	}
+]

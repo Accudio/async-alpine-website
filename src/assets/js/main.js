@@ -1,4 +1,3 @@
-// Focus Visible Polyfill
-import 'focus-visible'
+import Alpine from 'alpinejs';
 
-console.log('test')
+Alpine.start()

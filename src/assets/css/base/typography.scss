@@ -1,4 +1,24 @@
 body {
 	@apply font-main;
 	font-size: 1.125rem;
+	line-height: 1.5;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3 {
+	line-height: 1.1;
+	font-weight: 600;
+}
+
+h1, .h1 {
+	font-size: clamp(2rem, calc(1rem + 3vw), 3rem);
+}
+
+h2, .h2 {
+	font-size: clamp(1.75rem, calc(1rem + 2.5vw), 2.5rem);
+}
+
+h3, .h3 {
+	font-size: clamp(1.25rem, calc(1rem + 1vw), 1.5rem);
 }

@@ -1,0 +1,34 @@
+.header {
+	--flow: 1.5em;
+
+	display: grid;
+	grid-template-columns: minmax(auto, max-content) min-content;
+	align-items: center;
+	gap: .3em;
+
+	&__link {
+		opacity: .5;
+		text-decoration: none;
+		font-size: max(1rem, .75em);
+		font-weight: 300;
+		transition: all .2s;
+
+		&:hover, &:focus {
+			opacity: 1;
+		}
+	}
+}
+
+// .direct-link {
+// 	opacity: 0;
+// 	text-decoration: none;
+// 	font-size: .75em;
+
+// 	&:focus {
+// 		opacity: 1;
+// 	}
+// }
+
+// h1 .direct-link {
+// 	display: none;
+// }

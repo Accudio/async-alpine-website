@@ -1,0 +1,26 @@
+[
+	{
+		"title": "Async Alpine",
+		"url": "/"
+	},
+	{
+		"title": "Documentation",
+		"url": "/docs/"
+	},
+	{
+		"title": "Examples",
+		"url": "/examples/"
+	},
+	{
+		"title": "Credits",
+		"url": "/docs/contributing/"
+	},
+	{
+		"title": "License",
+		"url": "/docs/license/"
+	},
+	{
+		"title": "GitHub",
+		"url": "https://github.com/accudio/async-alpine"
+	}
+]

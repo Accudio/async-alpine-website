@@ -6,6 +6,8 @@ html {
 
 body {
 	position: relative;
+	display: flex;
+	flex-direction: column;
 	overflow-y: scroll;
 
 	[x-cloak] {
@@ -29,6 +31,44 @@ body {
 
 .outline-inner {
 	outline-offset: -0.25rem;
+}
+
+a {
+	color: unset;
+}
+
+code {
+	font-family: Consolas, Monaco, Andale Mono, Ubuntu Mono, monospace;
+}
+
+table {
+	--border: #d8dee4;
+	border-spacing: 0;
+	border-collapse: collapse;
+	margin: 1.5rem 0;
+	display: block;
+	width: 100%;
+	width: max-content;
+	max-width: 100%;
+	overflow: auto;
+
+	tr {
+		background-color: #ffffff;
+    border-top: 1px solid var(--border);
+
+		&:nth-child(2n) {
+			background-color: #f6f8fa;
+		}
+	}
+
+	th {
+		font-weight: 600;
+	}
+
+	th, td {
+		padding: .4rem .8rem;
+    border: 1px solid var(--border);
+	}
 }
 
 // Scrollbar styles

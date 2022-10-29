@@ -1,4 +1,6 @@
 const markdownIt = require('markdown-it')
+const markdownItAnchor = require('markdown-it-anchor')
+const markdownItAttrs = require('markdown-it-attrs')
 
 const EleventyPluginSyntaxhighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite')
@@ -62,6 +64,19 @@ module.exports = function (eleventyConfig) {
 		breaks: true,
 		linkify: true,
 		code: false
+	})
+	markdownLibrary.use(markdownItAttrs)
+	markdownLibrary.use(markdownItAnchor, {
+		permalink: markdownItAnchor.permalink.linkAfterHeader({
+			style: 'visually-hidden',
+			assistiveText: title => `Permalink to “${title}”`,
+			visuallyHiddenClass: 'sr-only',
+			class: 'header__link',
+			wrapper: ['<div class="header">', '</div>'],
+			symbol: '#',
+		}),
+		level: [2, 3, 4],
+		slugify: eleventyConfig.getFilter('slug')
 	})
 	eleventyConfig.setLibrary('md', markdownLibrary)
 
