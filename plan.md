@@ -1,7 +1,6 @@
 Website Todo
 ==============
 Examples
-404 page
 Logo
 Design
 Enhance content
