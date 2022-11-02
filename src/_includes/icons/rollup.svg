@@ -1,0 +1,43 @@
+<svg width="256" height="335" viewBox="0 0 256 335" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid">
+  <defs>
+    <linearGradient x1="26.8%" y1="48.2%" x2="67.6%" y2="55.3%" id="svg--rollup--linearGradient-1">
+      <stop stop-color="#FF6533" offset="0%"/>
+      <stop stop-color="#FF5633" offset="15.7%"/>
+      <stop stop-color="#FF4333" offset="43.4%"/>
+      <stop stop-color="#FF3733" offset="71.4%"/>
+      <stop stop-color="#F33" offset="100%"/>
+    </linearGradient>
+    <linearGradient x1="20.5%" y1="38.1%" x2="93.5%" y2="80.4%" id="svg--rollup--linearGradient-2">
+      <stop stop-color="#BF3338" offset="0%"/>
+      <stop stop-color="#F33" offset="100%"/>
+    </linearGradient>
+    <linearGradient x1="32.3%" y1="39.5%" x2="45.6%" y2="48.9%" id="svg--rollup--linearGradient-3">
+      <stop stop-color="#FF6533" offset="0%"/>
+      <stop stop-color="#FF5633" offset="15.7%"/>
+      <stop stop-color="#FF4333" offset="43.4%"/>
+      <stop stop-color="#FF3733" offset="71.4%"/>
+      <stop stop-color="#F33" offset="100%"/>
+    </linearGradient>
+    <linearGradient x1="51.6%" y1="78.3%" x2="48.5%" y2="41.7%" id="svg--rollup--linearGradient-4">
+      <stop stop-color="#FF6533" offset="0%"/>
+      <stop stop-color="#FF5633" offset="15.7%"/>
+      <stop stop-color="#FF4333" offset="43.4%"/>
+      <stop stop-color="#FF3733" offset="71.4%"/>
+      <stop stop-color="#F33" offset="100%"/>
+    </linearGradient>
+    <linearGradient x1="40.2%" y1="47.2%" x2="54%" y2="54.5%" id="svg--rollup--linearGradient-5">
+      <stop stop-color="#FBB040" offset="0%"/>
+      <stop stop-color="#FB8840" offset="100%"/>
+    </linearGradient>
+    <linearGradient x1="55.2%" y1="5.9%" x2="40.9%" y2="128%" id="svg--rollup--linearGradient-6">
+      <stop stop-color="#FFF" offset="0%"/>
+      <stop stop-color="#FFF" stop-opacity="0" offset="100%"/>
+    </linearGradient>
+  </defs>
+  <path d="M256 110c0-20-5-38-14-54-24-25-77-31-90 0s23 66 38 63c20-4-3-49-3-49 30 57 23 40-32 92-55 53-111 164-119 169l-1 1h216c3 0 6-4 4-8l-56-112c-2-2-1-5 2-6 33-19 55-55 55-96Z" fill="url(#svg--rollup--linearGradient-1)"/>
+  <path d="M256 110c0-20-5-38-14-54-24-25-77-31-90 0s23 66 38 63c20-4-3-49-3-49 30 57 23 40-32 92-55 53-111 164-119 169l-1 1h216c3 0 6-4 4-8l-56-112c-2-2-1-5 2-6 33-19 55-55 55-96Z" fill="url(#svg--rollup--linearGradient-2)"/>
+  <path d="M36 331c8-5 64-116 119-169 55-52 62-35 32-92 0 0-117 163-159 244" fill="url(#svg--rollup--linearGradient-3)"/>
+  <path d="M52 185C131 40 141 25 182 25c22 0 43 10 58 27-20-31-54-51-92-52H14c-3 0-5 2-5 5v270c8-21 21-50 43-90Z" fill="url(#svg--rollup--linearGradient-4)"/>
+  <path d="M155 162C100 215 44 326 36 331s-22 5-30-3c-7-9-19-23 46-143C131 40 141 25 182 25c22 0 43 10 58 27l2 4c-24-25-77-31-90 0s23 66 38 63c20-4-3-49-3-49 30 57 23 40-32 92Z" fill="url(#svg--rollup--linearGradient-5)"/>
+  <path d="M59 191C137 46 148 32 189 32c17 0 35 6 49 18a75 75 0 0 0-56-25c-41 0-51 15-130 160C-13 305-1 319 6 328l4 3c-7-10-10-33 49-140Z" fill="url(#svg--rollup--linearGradient-6)" opacity=".3"/>
+</svg>

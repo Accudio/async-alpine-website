@@ -1,0 +1,51 @@
+{% macro card (data) %}
+<li class="flex">
+	<a
+		class="flex items-center border-solid border-2 border-black rounded-[8px] w-full py-[.75rem] px-[1rem] no-underline"
+		href="{{ data.url }}"
+	>
+		{% if data.emoji %}
+			<span class="text-[2rem] mr-[1rem] w-[2rem] leading-none">{{ data.emoji }}</span>
+		{% elif data.svg %}
+			{% set svgContent %}{% include 'icons/' ~ data.svg ~ '.svg' %}{% endset %}
+			{{ svgContent | replace('<svg', '<svg class="mr-[1rem] h-[2rem] w-[2rem]" aria-hidden="true"') | safe }}
+		{% endif %}
+		{{ data.title }}
+	</a>
+</li>
+{% endmacro %}
+
+<article class="section">
+	<div class="container flow">
+		<h1>Examples and Demos</h1>
+
+		<h2 class="fl-mt-[3rem,5rem]">Getting started + tooling</h2>
+		<ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[.5rem] mt-[2rem]" role="list">
+			{{ card({
+				title: 'Loading via CDN',
+				url: '#0',
+				emoji: '💨'
+			}) }}
+			{{ card({
+				title: 'Webpack & Mix',
+				url: '#1',
+				svg: 'webpack'
+			}) }}
+			{{ card({
+				title: 'Vite',
+				url: '#2',
+				svg: 'vite'
+			}) }}
+			{{ card({
+				title: 'Rollup',
+				url: '#3',
+				svg: 'rollup'
+			}) }}
+			{{ card({
+				title: 'Parcel',
+				url: '#4',
+				emoji: '📦'
+			}) }}
+		</ul>
+	</div>
+</article>
