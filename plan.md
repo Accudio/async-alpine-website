@@ -1,12 +1,8 @@
 Website Todo
 ==============
-Examples
+Examples - make examples
+Improve mobile
 Logo
 Design
 Enhance content
-Improve mobile
-Codesandbox demos of Vite, WebPack, Rollup and Parcel?
-
-Additional ideas
-==============
-bar at the bottom of the page tracking how many of the components have been downloaded. Maybe just on the demo/examples page?
+Demo 'game' - when enabled components are 'hidden' throughout the site, find/load them all!
