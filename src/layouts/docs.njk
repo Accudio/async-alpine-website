@@ -5,38 +5,43 @@ layout: base
 <article class="section">
 	<div class="container max-w-[70rem] md:flex md:gap-[2rem]">
 		<nav
-			class="shrink-0 md:fl-w-[230px@md,300px] pt-[16px] mdd:mb-[16px]"
+			class="shrink-0 md:fl-w-[230px@md,300px] md:pt-[16px] mdd:mb-[48px]"
 			aria-label="documentation"
 			x-data="{ show: false }"
 			@click="show = false"
 		>
 			<button
+				class="md:hidden button w-full transition-all"
 				@click.stop="show = !show"
 				:aria-expanded="show.toString()"
-				class="md:hidden"
+				:class="{ 'rounded-b-[0px]': show }"
 			>
-				Toggle Navigation
+				Sections
 			</button>
 			<ul
 				role="list"
-				class="md:sticky md:top-[2rem] flow"
+				class="md:sticky md:top-[2rem] md:flow mdd:border mdd:border-solid mdd:border-black"
 				:class="{ 'mdd:hidden': !show }"
 			>
 				{% for item in navDocs %}
 					{% set isCurrent = true if page.url == item.url else false %}
-					<li>
+					<li class="flex flex-col border-0 border-b border-solid border-[#ddd] last:border-0">
 						<a
-							class="no-underline"
+							class="no-underline mdd:w-full mdd:px-[16px] mdd:py-[8px]"
 							href="{{ item.url }}{% if isCurrent %}#top{% endif %}"
 							{% if isCurrent %}aria-current="page"{% endif %}
 						>
 							{{ item.title }}
+							{% if isCurrent %}
+								<span class="sr-only">(current)</span>
+								<span aria-hidden="true" class="md:hidden opacity-50 text-[.75em]">&#8592;</span>
+							{% endif %}
 						</a>
 						{% if item.subitems %}
-							<ul role="list" class="pl-[16px]">
+							<ul role="list" class="md:pl-[16px] mdd:pb-[4px]">
 								{% for item in item.subitems %}
-									<li>
-										<a  class="no-underline" href="{{ item.url }}">{{ item.title }}</a>
+									<li class="flex">
+										<a class="no-underline mdd:w-full mdd:py-[4px] mdd:pr-[16px] mdd:pl-[32px]" href="{{ item.url }}">{{ item.title }}</a>
 									</li>
 								{% endfor %}
 							</ul>
