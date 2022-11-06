@@ -25,7 +25,7 @@ layout: base
 			>
 				{% for item in navDocs %}
 					{% set isCurrent = true if page.url == item.url else false %}
-					<li class="flex flex-col border-0 border-b border-solid border-[#ddd] last:border-0">
+					<li class="flex flex-col mdd:border-0 mdd:border-b mdd:border-solid border-mdd:[#ddd] mdd:last:border-0 md:mb-[16px]">
 						<a
 							class="no-underline mdd:w-full mdd:px-[16px] mdd:py-[8px]"
 							href="{{ item.url }}{% if isCurrent %}#top{% endif %}"

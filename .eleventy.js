@@ -41,22 +41,10 @@ module.exports = function (eleventyConfig) {
 		}
 	})
 
-	// Filters
-	Object.keys(filters).forEach((filterName) => {
-		eleventyConfig.addFilter(filterName, filters[filterName])
-	})
-
-	// Transforms
-	Object.keys(transforms).forEach((transformName) => {
-		eleventyConfig.addTransform(transformName, transforms[transformName])
-	})
-
-	// Shortcodes
-	Object.keys(shortcodes).forEach((shortcodeName) => {
-		eleventyConfig.addShortcode(shortcodeName, shortcodes[shortcodeName])
-	})
-
-	eleventyConfig.addShortcode('year', () => `${new Date().getFullYear()}`)
+	// Filters, Transforms and Shortcodes
+	filters(eleventyConfig)
+	transforms(eleventyConfig)
+	shortcodes(eleventyConfig)
 
 	// Customize Markdown library and settings:
 	let markdownLibrary = markdownIt({

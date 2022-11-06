@@ -1,7 +1,7 @@
 const cheerio = require('cheerio')
 
-module.exports = {
-	headingWrappers(content, output) {
+module.exports = config => {
+	config.addTransform('headingWrappers', (content, output) => {
 		if (!output.endsWith('.html')) return content
 
 		const $ = cheerio.load(content)
@@ -11,5 +11,5 @@ module.exports = {
 		}
 
 		return $.html()
-	}
+	})
 }

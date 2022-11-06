@@ -1,14 +1,14 @@
 const { DateTime } = require('luxon')
 
-module.exports = {
-	dateToFormat: function (date, format) {
+module.exports = config => {
+	config.addFilter('dateToFormat', (date, format) => {
 		return DateTime.fromJSDate(date, { zone: 'utc' }).toFormat(String(format))
-	},
+	})
 
-	dateToISO: function (date) {
+	config.addFilter('dateToISO', (date) => {
 		return DateTime.fromJSDate(date, { zone: 'utc' }).toISO({
 			includeOffset: false,
 			suppressMilliseconds: true
 		})
-	}
+	})
 }

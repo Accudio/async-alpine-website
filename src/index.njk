@@ -27,45 +27,34 @@
 <article class="section">
 	<div class="container flow">
 		<h2>Async Alpine in the wild</h2>
+		<p>These are a few great examples of websites using Async Alpine!</p>
 		<ul class="mt-[2rem] grid md:grid-cols-3 gap-[1rem]" role="list">
-			{% set cards = [
-				{
-					title: 'The Good Crisp Company',
-					url: '#',
-					author: 'Series Eight',
-					authorUrl: 'https://serieseight.com',
-					image: 'https://via.placeholder.com/600x400',
-					imageAlt: ''
-				},
-				{
-					title: 'Example 2',
-					url: '#',
-					image: 'https://via.placeholder.com/600x400',
-					imageAlt: ''
-				},
-				{
-					title: 'Example 3',
-					url: '#',
-					image: 'https://via.placeholder.com/600x400',
-					imageAlt: ''
-				}
-			] %}
-			{% for card in cards %}
+			{% for card in showcase %}
 				<li>
 					<div class="relative flex flex-col gap-[.75rem]">
 						<h3 class="pr-[16px]">
 							{% if card.url %}
-								<a class="box-link no-underline" href="{{ card.url }}">{{ card.title }}</a>
+								<a class="box-link no-underline" href="{{ card.url }}" rel="noopener">
+									{{ card.title }}
+								</a>
 							{% else %}{{ card.title }}{% endif %}
 						</h3>
 						{% if card.image %}
-							<img class="order-first" src="{{ card.image }}" width="600" height="400" alt="{{ imageAlt }}" loading="lazy" decoding="async">
+							<div class="order-first">
+								{% image
+									card.image,
+									'',
+									'border-2 border-solid border-black rounded-[4px]'
+								%}
+							</div>
 						{% endif %}
 					</div>
 					{% if card.author %}
 						<p class="mt-[.75rem]">
 							{% if card.authorUrl %}
-								<a href="{{ card.authorUrl }}">{{ card.author }}</a>
+								<a href="{{ card.authorUrl }}" rel="noopener">
+									{{ card.author }}
+								</a>
 							{% else %}{{ card.author }}{% endif %}
 						</p>
 					{% endif %}
@@ -74,7 +63,7 @@
 		</ul>
 		<div class="mt-[2rem]">
 			<hr class="mx-auto mb-[2rem] max-w-[16rem]">
-			<p>Have you built a site with Async Alpine and want to show it off? <a href="mailto:alistair@accudio.com">Let us know</a>!</p>
+			<p>Have you built a site with Async Alpine and want to show it off? <a href="https://github.com/accudio/async-alpine/discussions">Let us know</a>!</p>
 		</div>
 	</div>
 </article>

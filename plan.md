@@ -1,7 +1,5 @@
 Website Todo
 ==============
-Write a quick start guide
-Enhance content
 Logo
 Design
 
