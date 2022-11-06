@@ -22,3 +22,11 @@ h2, .h2 {
 h3, .h3 {
 	font-size: clamp(1.25rem, calc(1rem + 1vw), 1.5rem);
 }
+
+h1, h2, h3 {
+	text-decoration: underline;
+	text-decoration-thickness: .35em;
+	text-decoration-color: theme('colors.green.100');
+	text-underline-offset: -.2em;
+	text-decoration-skip-ink: none;
+}

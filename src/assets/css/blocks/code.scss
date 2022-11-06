@@ -1,0 +1,34 @@
+.b-code {
+	position: relative;
+	margin: 1.5rem 0;
+
+	pre {
+		&:not(.d) {
+			margin: 0;
+			padding-right: 5em;
+		}
+
+		::selection {
+			background-color: #fff;
+			color: #000;
+		}
+	}
+
+	&__copy {
+		--focus-colour: theme('colors.green.100');
+		position: absolute;
+		top: .25rem;
+		right: .25rem;
+		display: grid;
+		border: 1px solid #ddd;
+		border-radius: .15rem;
+		padding: .25rem;
+		background: theme('colors.white');
+		cursor: pointer;
+
+		> * {
+			grid-row: 1;
+			grid-column: 1;
+		}
+	}
+}

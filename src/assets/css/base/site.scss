@@ -5,6 +5,8 @@ html {
 }
 
 body {
+	background: url('../bg.svg') 26rem/26rem;
+	color: theme('colors.dark');
 	position: relative;
 	display: flex;
 	flex-direction: column;
@@ -21,7 +23,7 @@ body {
 
 // Focus styles - :focus-visible if supported, .focus-visible if not
 :focus {
-	outline: 2px dashed var(--focus-colour, #000);
+	outline: 2px dashed var(--focus-colour, theme('colors.green.600'));
 	outline-offset: 0.25rem;
 
 	&:not(:focus-visible) {
@@ -35,6 +37,14 @@ body {
 
 a {
 	color: unset;
+	text-decoration-color: theme('colors.green.600');
+	text-underline-offset: .2em;
+	text-decoration-thickness: .15em;
+}
+
+::selection {
+	background-color: theme('colors.green.900');
+	color: theme('colors.white');
 }
 
 code {
@@ -73,8 +83,8 @@ table {
 
 // Scrollbar styles
 html {
-	--scrollbar-bg: #fff;
-	--scrollbar-thumb: #000;
+	--scrollbar-bg: #fafafa;
+	--scrollbar-thumb: theme('colors.green.900');
 }
 // firefox and future standard
 * {
@@ -84,6 +94,7 @@ html {
 // webkit
 ::-webkit-scrollbar {
 	width: 0.75rem;
+	height: 0.75rem;
 }
 ::-webkit-scrollbar-track {
 	background: var(--scrollbar-bg);

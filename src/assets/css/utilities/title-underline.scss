@@ -1,0 +1,7 @@
+h1, h2, h3, h4 {
+	text-decoration: underline;
+	text-decoration-thickness: .35em;
+	text-decoration-color: theme('colors.green.100');
+	text-underline-offset: -.2em;
+	text-decoration-skip-ink: none;
+}

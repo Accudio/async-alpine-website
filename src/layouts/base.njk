@@ -1,24 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+---
+layout: raw
+---
 
-	<title>Async Alpine</title>
-	<meta name="description" content="">
-
-	<link rel="stylesheet" href="/assets/css/main.scss">
-	<script type="module" src="/assets/js/main.js"></script>
-</head>
-<body>
-	<a href="#main" class="b-skipLink">Skip to main content</a>
-
-	{% include 'header.njk' %}
-
-	<main id="main">
-		{{ content | safe }}
-	</main>
-
-	{% include 'footer.njk' %}
-</body>
-</html>
+<main id="main">
+	{{ content | safe }}
+</main>

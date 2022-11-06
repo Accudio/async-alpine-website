@@ -1,7 +1,7 @@
 {% macro card (data) %}
 <li class="flex">
 	<a
-		class="flex items-center border-solid border-2 border-black rounded-[8px] w-full py-[.75rem] px-[1rem] no-underline"
+		class="flex items-center border-solid border-2 border-green-600 rounded-[.5rem] w-full py-[.75rem] px-[1rem] font-medium no-underline hover:bg-green-100 transition"
 		href="{{ data.url }}"
 	>
 		{% if data.emoji %}
@@ -15,13 +15,17 @@
 </li>
 {% endmacro %}
 
-<article class="section">
-	<div class="container flow">
+<article class="section container">
+	<div class="box flow">
 		<h1>Examples and Demos</h1>
 
 		<p>We have a set of examples and starters to get you started with Async Alpine and for you to experiment with. If you have feedback <a href="https://github.com/accudio/async-alpine/discussions">let us know</a>.</p>
+	</div>
+</article>
 
-		<h2 class="fl-mt-[3rem,5rem]" id="setup">Getting started + tooling</h2>
+<article class="section container">
+	<div class="box flow">
+		<h2 id="setup">Getting started + tooling</h2>
 		<ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[.5rem] mt-[2rem]" role="list">
 			{{ card({
 				title: 'Loading via CDN',
@@ -44,8 +48,12 @@
 				svg: 'rollup'
 			}) }}
 		</ul>
+	</div>
+</article>
 
-		<h2 class="fl-mt-[3rem,5rem]">Loading Methods</h2>
+<article class="section container">
+	<div class="box flow">
+		<h2>Loading Methods</h2>
 		<ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[.5rem] mt-[2rem]" role="list">
 			{{ card({
 				title: 'URL',
@@ -68,8 +76,12 @@
 				svg: 'folder'
 			}) }}
 		</ul>
+	</div>
+</article>
 
-		<h2 class="fl-mt-[3rem,5rem]">Strategies</h2>
+<article class="section container">
+	<div class="box flow">
+		<h2>Strategies</h2>
 		<ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-[.5rem] mt-[2rem]" role="list">
 			{{ card({
 				title: 'Eager',

@@ -1,7 +1,6 @@
 Website Todo
 ==============
 Logo
-Design
 
 Later?
 ==============

@@ -1,19 +1,27 @@
 .button {
-	--bg: #000;
+	--bg: theme('colors.green.900');
 	--colour: #fff;
-	--bg-hover: #333;
-	--colour-hover: var(--colour);
+	--bg-hover: theme('colors.green.300');
+	--colour-hover: theme('colors.green.900');
 
 	border: 1px solid transparent;
 	border-radius: .25rem;
-	padding: .25rem .5rem;
+	padding: .5rem 1.5rem;
 	background: var(--bg);
+	font-weight: 500;
 	color: var(--colour);
 	text-decoration: none;
 	transition: all .2s;
 
-	&:hover {
-		background: var(--bg-hover);
-		color: var(--colour-hover);
+	@media (hover: hover) {
+		&:hover {
+			background: var(--bg-hover);
+			color: var(--colour-hover);
+		}
+	}
+
+	&::selection {
+		background-color: theme('colors.green.100');
+		color: theme('colors.green.900');
 	}
 }

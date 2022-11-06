@@ -1,0 +1,8 @@
+@layer utilities {
+	.box {
+		@apply fl-px-[1rem,2rem] fl-py-[1.5rem,2rem];
+		background: theme('colors.white');
+		border: 2px solid theme('colors.dark');
+		border-radius: .75rem;
+	}
+}

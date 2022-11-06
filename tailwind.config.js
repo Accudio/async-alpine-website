@@ -1,11 +1,12 @@
 module.exports = {
   content: [
 		'src/**/*.njk',
-		'src/**/*.js'
+		'src/**/*.md',
+		'src/**/*.js',
+		'utils/**/*.js'
 	],
 
   theme: {
-
     // ----- VIEWPORT ----- //
     screens: {
       xs: '400px',
@@ -32,8 +33,14 @@ module.exports = {
 			black: '#000',
 			white: '#fff',
 
-			dark: '#2e2c40',
-			light: '#f4e5e4'
+			// theme
+			dark: '#1A2902',
+			green: {
+				900: '#344C11',
+				600: '#668016',
+				300: '#AEC670',
+				100: '#d7e2b8'
+			}
     },
 
     // ----- FONTS ----- //

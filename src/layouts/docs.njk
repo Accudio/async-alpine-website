@@ -1,11 +1,11 @@
 ---
-layout: base
+layout: raw
 ---
 
-<article class="section">
+<div class="section">
 	<div class="container max-w-[70rem] md:flex md:gap-[2rem]">
 		<nav
-			class="shrink-0 md:fl-w-[230px@md,300px] md:pt-[16px] mdd:mb-[48px]"
+			class="shrink-0 md:fl-w-[14.4rem@md,18.8rem] mdd:mb-[1.5rem]"
 			aria-label="documentation"
 			x-data="{ show: false }"
 			@click="show = false"
@@ -20,28 +20,28 @@ layout: base
 			</button>
 			<ul
 				role="list"
-				class="md:sticky md:top-[2rem] md:flow mdd:border mdd:border-solid mdd:border-black"
+				class="md:box md:sticky md:top-[4rem] md:flow  mdd:rounded-b-[.25rem] mdd:border-2 mdd:border-t-0 mdd:border-solid mdd:border-green-900 bg-white"
 				:class="{ 'mdd:hidden': !show }"
 			>
 				{% for item in navDocs %}
 					{% set isCurrent = true if page.url == item.url else false %}
-					<li class="flex flex-col mdd:border-0 mdd:border-b mdd:border-solid border-mdd:[#ddd] mdd:last:border-0 md:mb-[16px]">
+					<li class="flex flex-col mdd:border-0 mdd:border-b mdd:border-solid mdd:border-green-900/20 mdd:last:border-0 md:mb-[1rem]">
 						<a
-							class="no-underline mdd:w-full mdd:px-[16px] mdd:py-[8px]"
+							class="flex items-center no-underline mdd:px-[1rem] mdd:py-[.5rem]"
 							href="{{ item.url }}{% if isCurrent %}#top{% endif %}"
 							{% if isCurrent %}aria-current="page"{% endif %}
 						>
 							{{ item.title }}
 							{% if isCurrent %}
 								<span class="sr-only">(current)</span>
-								<span aria-hidden="true" class="md:hidden opacity-50 text-[.75em]">&#8592;</span>
+								<span aria-hidden="true" class="ml-auto text-green-600">&#8592;</span>
 							{% endif %}
 						</a>
 						{% if item.subitems %}
-							<ul role="list" class="md:pl-[16px] mdd:pb-[4px]">
+							<ul role="list" class="md:pl-[1rem] mdd:pb-[.25rem]">
 								{% for item in item.subitems %}
 									<li class="flex">
-										<a class="no-underline mdd:w-full mdd:py-[4px] mdd:pr-[16px] mdd:pl-[32px]" href="{{ item.url }}">{{ item.title }}</a>
+										<a class="no-underline mdd:w-full mdd:py-[.25rem] mdd:pr-[1rem] mdd:pl-[2rem]" href="{{ item.url }}">{{ item.title }}</a>
 									</li>
 								{% endfor %}
 							</ul>
@@ -51,8 +51,9 @@ layout: base
 			</ul>
 		</nav>
 
-		<div class="grow basis-0 min-w-0 flow">
+		<main id="main" class="box grow basis-0 min-w-0 flex flex-col flow">
 			{{ content | safe }}
-		</div>
+			{% docsFooter page.url %}
+		</main>
 	</div>
-</article>
+</div>
