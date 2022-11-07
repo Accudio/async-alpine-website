@@ -3,6 +3,7 @@ Website Todo
 Favicons
 Open Graph images
 Meta descriptions
+Fix CLS
 
 Later?
 ==============
