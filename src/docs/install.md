@@ -1,3 +1,7 @@
+---
+title: Installation — Async Alpine Documentation
+---
+
 # Installation
 
 There are two recommended methods of loading Async Alpine. Adding a `script` tag with a [CDN](#cdn) or importing it into your bundle with [npm](#npm).

@@ -1,3 +1,7 @@
+---
+title: Usage — Async Alpine Documentation
+---
+
 # Usage
 
 Alpine components are turned into async components by adding the attributes `x-ignore` and `ax-load`—with optional [loading strategy](#strategies):

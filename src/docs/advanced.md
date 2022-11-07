@@ -1,3 +1,7 @@
+---
+title: Advanced — Async Alpine Documentation
+---
+
 # Advanced
 
 ## Delayed Initialisation {id=delayed-init}

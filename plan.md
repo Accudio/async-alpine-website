@@ -1,6 +1,8 @@
 Website Todo
 ==============
-Logo
+Favicons
+Open Graph images
+Meta descriptions
 
 Later?
 ==============

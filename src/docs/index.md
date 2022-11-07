@@ -1,3 +1,7 @@
+---
+title: Quick Start — Async Alpine Documentation
+---
+
 # Quick Start
 
 There are several [methods of installing](/docs/install) Async Alpine depending on how you set up Alpine and how you manage your JavaScript.

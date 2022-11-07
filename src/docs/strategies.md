@@ -1,3 +1,7 @@
+---
+title: Loading Strategies — Async Alpine Documentation
+---
+
 # Strategies
 
 Async Alpine loads components according to different 'Strategies'. These strategies allow you specify the conditions that would cause a component to download. By default any components on the page will be immediately downloaded, but instead you could load a component when it enters the viewport, for certain media queries, in response to events and more.

@@ -1,3 +1,7 @@
+---
+title: Credits and Contributing — Async Alpine Documentation
+---
+
 # Credits and Contributing
 
 Async Alpine wouldn't be possible without the help of lots of people, so here's to them! If you want to help out and become one of those people then please do!
