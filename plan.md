@@ -4,6 +4,7 @@ Favicons
 Open Graph images
 Meta descriptions
 Fix CLS
+Readme
 
 Later?
 ==============

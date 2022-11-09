@@ -5,7 +5,8 @@ html {
 }
 
 body {
-	background: url('../bg.svg') 26rem/26rem;
+	background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 412 412' xmlns='http://www.w3.org/2000/svg' fill='none'%3E%3Cstyle%3E .stroke %7B stroke: %23ececec; stroke-width: 2px %7D .fill %7B fill: %23ececec %7D %3C/style%3E%3Cpath fill='%23fafafa' d='M0 0h412v412H0z'/%3E%3Cellipse cx='134.8' cy='27.7' rx='9.7' ry='9.5' class='stroke'/%3E%3Cpath d='M68 7v10M18 74l10-8 9 10-10 8zm200-26 16 11m117-34v21h-13l13-21Zm-24 81 4 19m-97-3-8 13 10 12 8-14-10-10Z' class='stroke'/%3E%3Ccircle cx='148.4' cy='100.9' class='stroke' r='3.8'/%3E%3Cpath d='m76 155-1 20 15-13-14-7ZM8 138l10-2' class='stroke'/%3E%3Cpath class='fill' d='m173 189 7 2-2 7-6-2zm128-2-4 5-3-5h7Z'/%3E%3Cpath d='M375 181c-4-13 15-17 18-5m-88 72 6 9-5 9-10 1-6-8 4-10Zm-207 1 14-13m62 35h17v-17M44 281l9-2 4 22-9 2z' class='stroke'/%3E%3Cpath d='m129 339 2 6h7l-3-7-6 1Z' class='fill'/%3E%3Ccircle cx='20' cy='377.7' class='fill' r='3.1'/%3E%3Cpath d='m227 363 9 10 7-11-16 1Z' class='stroke'/%3E%3Cpath d='m244 295-1 6 6-1-5-5Z' class='fill'/%3E%3Cpath d='m327 324 15 14' class='stroke'/%3E%3Ccircle cx='362.1' cy='367.1' class='stroke' r='6'/%3E%3Cpath d='m381 257-1 10 3-1-1 11 5-14-3 1 2-8-6 1Z' class='fill'/%3E%3C/svg%3E%0A");
+	background-size: 26rem 26rem;
 	color: theme('colors.dark');
 	position: relative;
 	display: flex;

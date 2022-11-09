@@ -45,7 +45,7 @@ module.exports = {
 
     // ----- FONTS ----- //
     fontFamily: {
-      main: ['work-sans', 'serif'],
+      main: ['work-sans', 'sans-serif'],
     },
 
     letterSpacing: {
