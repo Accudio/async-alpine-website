@@ -13,7 +13,7 @@ To get started, let's set up a page with the CDN installation and inline compone
 Add `script` elements for Async Alpine and Alpine.js. Async Alpine has to be loaded first:
 
 ```html
-<script defer src="https://cdn.jsdelivr.net/npm/async-alpine@0.5.x/dist/async-alpine.script.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/async-alpine@1.x.x/dist/async-alpine.script.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 ```
 
