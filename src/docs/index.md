@@ -1,8 +1,8 @@
 ---
-title: Quick Start — Async Alpine Documentation
+title: Getting Started — Async Alpine Documentation
 ---
 
-# Quick Start
+# Getting Started
 
 There are several [methods of installing](/docs/install) Async Alpine depending on how you set up Alpine and how you manage your JavaScript.
 
