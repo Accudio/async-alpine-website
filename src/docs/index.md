@@ -66,7 +66,7 @@ Make sure to add your `x-data` attribute as you would normally with Alpine.js, a
 Now our component will only be loaded when it's present on the page. We can pass different strategies into the `ax-load` attribute to control how it should load:
 
 - `ax-load="visible"` &mdash; load the component when it's visible within the viewport;
-- `ax-load="media (min-width: 768px)` &mdash; only load the component when the screen is wider than 768px.
+- `ax-load="media (min-width: 768px)"` &mdash; only load the component when the screen is wider than 768px.
 - `ax-load="event"` &mdash; wait for a JavaScript event to load!
 
 [More on strategies](/docs/strategies)
