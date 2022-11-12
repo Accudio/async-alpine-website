@@ -1,5 +1,6 @@
 ---
 title: Advanced — Async Alpine Documentation
+description: Advanced options and usage for Async Alpine, delaying the initialisation of bundled or inline Alpine.js components and prefix customisation
 ---
 
 # Advanced

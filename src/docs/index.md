@@ -1,5 +1,6 @@
 ---
 title: Getting Started — Async Alpine Documentation
+description: How to get started with Async Alpine to load Alpine.js components lazily, for a quick start using a CDN.
 ---
 
 # Getting Started

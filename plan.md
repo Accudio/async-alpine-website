@@ -1,8 +1,3 @@
-Website Todo
-==============
-Meta descriptions
-Fix CLS
-
 Later?
 ==============
 Improve examples - make less contrived?

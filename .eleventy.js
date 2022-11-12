@@ -4,6 +4,7 @@ const markdownItAttrs = require('markdown-it-attrs')
 
 const EleventyPluginSyntaxhighlight = require('@11ty/eleventy-plugin-syntaxhighlight')
 const EleventyVitePlugin = require('@11ty/eleventy-plugin-vite')
+const InlineCSS = require('./utils/vite/vite-plugin-inline-css.js')
 
 const filters = require('./utils/filters.js')
 const transforms = require('./utils/transforms.js')
@@ -25,18 +26,21 @@ module.exports = function (eleventyConfig) {
 			},
 			appType: 'custom',
 			assetsInclude: ['**/*.xml', '**/*.txt'],
+			plugins: [
+				InlineCSS()
+			],
 			build: {
 				mode: 'production',
 				sourcemap: 'true',
 				manifest: true,
-				// This puts CSS and JS in subfolders - remove if you want all of it to be in /assets instead
-				rollupOptions: {
-					output: {
-						assetFileNames: 'assets/main.[hash].css',
-						chunkFileNames: 'assets/[name].[hash].js',
-						entryFileNames: 'assets/[name].[hash].js'
-					}
-				}
+				cssCodeSplit: false,
+				// rollupOptions: {
+				// 	output: {
+				// 		assetFileNames: 'assets/main.[hash].css',
+				// 		chunkFileNames: 'assets/[name].[hash].js',
+				// 		entryFileNames: 'assets/[name].[hash].js'
+				// 	}
+				// }
 			}
 		}
 	})

@@ -1,5 +1,6 @@
 ---
 title: Loading Strategies — Async Alpine Documentation
+description: "The different methods of loading Alpine.js components using Async Alpine: eager loading, idle, when visible, on media query or event, or combined"
 ---
 
 # Strategies

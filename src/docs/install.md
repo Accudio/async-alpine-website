@@ -1,5 +1,6 @@
 ---
 title: Installation — Async Alpine Documentation
+description: Installation details for Async Alpine using a CDN or npm installation, depending on how you load Alpine.js
 ---
 
 # Installation

@@ -2,7 +2,10 @@
 	<nav>
 		<ul class="flex flex-wrap justify-center" role="list">
 			{% for item in navMain %}
-				{% set isCurrent = true if page.url == item.url else false %}
+				{% set isCurrent = true if item.url == page.url  else false %}
+				{% if item.url != '/' %}
+					{% set isCurrent = true if item.url in page.url  else false %}
+				{% endif %}
 				<li>
 					<a
 						class="

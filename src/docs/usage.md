@@ -1,5 +1,6 @@
 ---
 title: Usage — Async Alpine Documentation
+description: Async Alpine supports many methods of loading Alpine.js components asynchronously, depending on how your website is set up and built
 ---
 
 # Usage

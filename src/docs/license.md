@@ -1,5 +1,6 @@
 ---
 title: License — Async Alpine Documentation
+description: Async Alpine is licensed under the Apache-2.0 license
 ---
 
 # License

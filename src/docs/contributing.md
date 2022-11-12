@@ -1,5 +1,6 @@
 ---
 title: Credits and Contributing — Async Alpine Documentation
+description: Contributors of Async Alpine. which accept contributions in the form of bug reports, feature requests and pull request
 ---
 
 # Credits and Contributing
