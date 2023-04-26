@@ -1,3 +1,5 @@
+// set viewport of chrome to 2000x1336, screenshot and crop out scrollbar
+
 const items = [
 	{
 		"title": "The Good Crisp Company",
@@ -16,9 +18,16 @@ const items = [
 	{
 		"title": "Carl Robertshaw",
 		"url": "https://carlrobertshaw.com",
-		"author": "William Bocchinelli",
+		"author": "William Hibberd",
 		"authorUrl": "https://twitter.com/williamhibberd",
 		"image": "./src/assets/img/carlrobertshaw.png"
+	},
+	{
+		"title": "Ganni Responsibility Report 2022",
+		"url": "https://responsibilityreport2022.ganni.com/",
+		"author": "William Hibberd",
+		"authorUrl": "https://twitter.com/williamhibberd",
+		"image": "./src/assets/img/ganni-responsibility-report.png"
 	}
 ]
 
