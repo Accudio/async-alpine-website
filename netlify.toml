@@ -27,3 +27,11 @@
     [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
     Vary = "Accept-Encoding"
+
+[build]
+	command = "npm run build"
+	functions = "netlify/functions"
+	publish = "_dist"
+
+[functions]
+  node_bundler = "esbuild"

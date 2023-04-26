@@ -39,7 +39,9 @@
     "vite": "^3.0.0"
   },
   "dependencies": {
+    "@netlify/functions": "^1.4.0",
     "async-alpine": "^0.5.4",
-    "csso": "^5.0.5"
+    "csso": "^5.0.5",
+    "node-fetch": "^3.3.1"
   }
 }
