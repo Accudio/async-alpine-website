@@ -33,4 +33,3 @@ const items = [
 
 module.exports = items
 	.sort(() => Math.random() - 0.5)
-	.slice(0, 3)

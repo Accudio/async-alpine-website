@@ -4,6 +4,10 @@
 		"url": "/"
 	},
 	{
+		"title": "Showcase",
+		"url": "/showcase/"
+	},
+	{
 		"title": "Documentation",
 		"url": "/docs/"
 	},

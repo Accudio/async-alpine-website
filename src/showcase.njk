@@ -1,0 +1,52 @@
+---
+title: Showcase — Async Alpine
+description: Some great websites use Async Alpine to manage their Alpine components and help improve performance
+---
+
+<article class="section container">
+	<div class="box flow">
+		<h1 class="title-underline">Async Alpine in the wild</h1>
+
+		<p>Some fantastic websites use Async Alpine to manage their Alpine components and help improve performance! The fantastic folk who have made this sites have kindly agreed to allow us to show them off as examples.</p>
+		<p>If you've built a Async Alpine and want to show it off, <a href="https://github.com/accudio/async-alpine/discussions">let us know</a>!</p>
+
+		<ul class="mt-[2rem] grid md:grid-cols-2 gap-[2rem]" role="list">
+			{% for card in showcase %}
+				<li>
+					<div class="group relative flex flex-col gap-[.75rem]">
+						<h3 class="pr-[1rem] no-underline">
+							{% if card.url %}
+								<a class="box-link z-1 no-underline" href="{{ card.url }}" rel="noopener">
+									{{ card.title }}
+								</a>
+							{% else %}{{ card.title }}{% endif %}
+						</h3>
+						{% if card.image %}
+							<div class="relative overflow-hidden order-first border-2 border-solid border-green-900 rounded-[.25rem]">
+								{% image card.image, '' %}
+								<div aria-hidden="true" class="absolute inset-0 flex items-center justify-center bg-green-900/70 opacity-0 group-hover:opacity-100 transition">
+									<svg
+										class="w-full h-full scale-75 group-hover:scale-100 transition"
+										viewBox="0 0 120 80"
+										xmlns="http://www.w3.org/2000/svg"
+									>
+										<path d="M68.3 41.4v8.2c0 1.6-1.3 2.8-2.8 2.8H50.4a2.8 2.8 0 0 1-2.8-2.8V34.5c0-1.5 1.2-2.8 2.8-2.8h8.2m5.5-4.1h8.3v8.3m-15.2 6.9 15.2-15.2" stroke-width="3.5" stroke="#fff" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+									</svg>
+								</div>
+							</div>
+						{% endif %}
+					</div>
+					{% if card.author %}
+						<p class="mt-[.75rem]">
+							{% if card.authorUrl %}
+								<a href="{{ card.authorUrl }}" rel="noopener">
+									{{ card.author }}
+								</a>
+							{% else %}{{ card.author }}{% endif %}
+						</p>
+					{% endif %}
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
+</article>
