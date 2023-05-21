@@ -80,6 +80,10 @@
 			{
 				"title": "Advanced Options",
 				"url": "/docs/advanced/#options"
+			},
+			{
+				"title": "Asset Loading",
+				"url": "/docs/advanced/#assets"
 			}
 		]
 	},

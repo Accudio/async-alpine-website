@@ -53,3 +53,32 @@ For a script installation, advanced options can be specified by setting `window.
 | Custom Prefix        | `prefix`          | `ax-`   | Sets the prefix Async Alpine uses for attributes. Can be set to `data-ax-` to make markup HTML spec-compliant. Similar to `alpinePrefix` below. |
 | Custom Alpine Prefix | `alpinePrefix`    | `x-`    | If you set a [custom prefixes](https://github.com/alpinejs/alpine/discussions/2042#discussioncomment-1304957) for Alpine.js, set this here also |
 | Default Strategy     | `defaultStrategy` | `eager` | Allows changing the strategy used when the `ax-load` attribute is empty. |
+
+## Asset Loading {id=assets}
+
+Async Alpine provides asynchronous loading of Alpine components, you may also want to load a component CSS or a non-Alpine JS file asynchronously.
+
+You can do this easily with the Alpine plugin [Alpine.js - Lazy Load Assets](https://github.com/tanthammar/alpine-lazy-load-assets). This plugin adds Alpine.js directives to load CSS and JavaScript files when the component initialises.
+
+Alternatively, it can be included within the initialisation of your component without a plugin:
+
+```html
+<div
+  x-data="{
+    init() {
+      const head = document.getElementsByTagName('head')[0]
+
+      // add script
+      const newScript = document.createElement('script')
+      newScript.src = '/assets/my-asset.js'
+      head.appendChild(newScript)
+
+      // add CSS file
+      const newCSS = document.createElement('link')
+      newCSS.src = '/assets/my-asset.css'
+      newCSS.rel = 'stylesheet'
+      head.appendChild(newCSS)
+    }
+  }"
+></div>
+```
