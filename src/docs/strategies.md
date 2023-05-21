@@ -136,7 +136,27 @@ window.addEventListener('another-library-init', () => {
 
 ## Combine strategies {id=combined}
 
-Strategies can also be combined by separating with pipe `|`, allowing for advanced and complex code splitting:
+Strategies can be combined together for more advanced and customisable loading behaviour. Note that this doesn't check the requirements *at the same time*, but that they have fired at some point before.
+
+### Since v1.1 {id=combined-1.1}
+
+You can combine strategies using a basic logic expression using `&&` (AND), `||` (OR) and brackets. This allows for more customisable loading strategies that would have required custom events before version 1.1.
+
+For example, you can make a component load when it is visible and either an event has been fired or the screen is >1024px wide. You could use this for a component that appears on a larger screen when it's visible but is behind a button click on a smaller device.
+
+```html
+<div
+  ax-load="visible && (event || media (min-width: 1024px))"
+  ax-load-src="/assets/path-to-component.js"
+  x-data="componentName"
+></div>
+```
+
+To remain backwards-compatible with pre v1.1 behaviour, a single pipe `|` maps to `&&` (AND). We recommend using the more explicit `&&` for new strategies.
+
+### Before v1.1 {id=combined-pre-1.1}
+
+When you combine strategies with a pipe `|` character the component will load when all conditions are true. In this case only when the CPU has become idle, the component is visible and the screen is > 1024px wide.
 
 ```html
 <div
