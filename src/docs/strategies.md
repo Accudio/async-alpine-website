@@ -98,7 +98,7 @@ Usage examples:
 
 ## Event
 
-The component won't be loaded until it receives the `async-alpine:load` event on `window`. Provide the `id` of the component in `detail.id`.
+The component won't be loaded until it receives an event on `window`. Provide the event name to listen for in brackets, or emit the `async-alpine:load` event with the the `id` of the component in `detail.id`. 
 
 This can be used for many different cases, the most simple would be loading a component on the click of a button. As it's flexible however you can implement your own conditions and trigger to load the component if you wanted.
 
@@ -116,20 +116,10 @@ Usage examples:
   x-data="componentName"
 ></div>
 
-<!-- load our component after `another-library-init` has loaded -->
-<script>
-window.addEventListener('another-library-init', () => {
-  window.dispatchEvent(new CustomEvent('async-alpine:load', {
-    detail: {
-      id: 'my-component-2'
-    }
-  }))
-})
-</script>
+<!-- load our component after another library emits the `another-library-init` event -->
 <div
-  id="my-component-2"
   x-ignore
-  ax-load="media (prefers-reduced-motion: no-preference)"
+  ax-load="event (another-library-init)"
   x-data="componentName"
 ></div>
 ```
