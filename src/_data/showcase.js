@@ -28,6 +28,20 @@ const items = [
 		"author": "William Hibberd",
 		"authorUrl": "https://twitter.com/williamhibberd",
 		"image": "./src/assets/img/ganni-responsibility-report.png"
+	},
+	{
+		"title": "New Orleans Original Daiquiris",
+		"url": "https://nolaoriginal.com/",
+		"author": "Series Eight",
+		"authorUrl": "https://serieseight.com",
+		"image": "./src/assets/img/nolaoriginal.png"
+	},
+	{
+		"title": "Fat Tuesday",
+		"url": "https://fattuesday.com/",
+		"author": "Series Eight",
+		"authorUrl": "https://serieseight.com",
+		"image": "./src/assets/img/fattuesday.png"
 	}
 ]
 
