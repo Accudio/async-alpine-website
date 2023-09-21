@@ -42,6 +42,13 @@ const items = [
 		"author": "Series Eight",
 		"authorUrl": "https://serieseight.com",
 		"image": "./src/assets/img/fattuesday.png"
+	},
+	{
+		"title": "The House Group",
+		"url": "https://thehouse-group.com/",
+		"author": "William Hibberd",
+		"authorUrl": "https://twitter.com/williamhibberd",
+		"image": "./src/assets/img/the-house-group.png"
 	}
 ]
 
