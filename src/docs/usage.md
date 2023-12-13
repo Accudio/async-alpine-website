@@ -81,19 +81,20 @@ With this pattern and a build tool that supports it this will automatically buil
 
 ## Alias Loading {id=alias}
 
-If all of your component modules are in a consistent structure the Alias loading method means you don't have to specify the URLs for each component. Instead you can specify the structure of your component files and Async Alpine will construct the URL from the component name.
-
-***Note:*** Async Alpine does not know whether your component files actually exist, it will simply make a blind HTTP request based on the provided URL format and hope it returns something it can execute. For this reason only one `.alias()` is supported.
+If all of your component modules are in a consistent structure the Alias loading method means you don't have to specify the URLs for each component. Instead you can specify the structure of your component files using a string with `[name]` and Async Alpine will construct the URL, or by providing a function to `.alias()`.
 
 ```js
 // components are in the /components/ directory named component.js
 AsyncAlpine.alias('/components/[name].js')
 
-// OR
-
 // components are in the separate directories as index.js
 AsyncAlpine.alias('/components/[name]/index.js')
+
+// provide an alias function which receives the `name` parameter, particularly handy for build tools
+AsyncAlpine.alias((name) => import(`/components/${name}.module.js`));
 ```
+
+***Note:*** For the string method, Async Alpine does not know whether your component files actually exist. It will simply make a blind HTTP request based on the provided URL format and hope it returns something it can execute. For this reason only one `.alias()` is supported.
 
 ## Inline Components {id=inline}
 
