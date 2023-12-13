@@ -11,9 +11,17 @@ Async Alpine wouldn't be possible without the help of lots of people, so here's 
 
 Async Alpine is primary built and maintained by [Alistair Shepherd](https://alistairshepherd.uk) ([@accudio](https://twitter.com/accudio)).
 
-A big thank you to anyone who has found bugs and files issues, or tried it out and given us feedback!
+A big thank you to [those who have contributed code](#contributors), anyone who has found bugs and filed issues, or tried it out and given us feedback!
 
-A thank you also to [Series Eight](https://serieseight.com) whose projects provided a great proving ground for the initial production tests of Async Alpine.
+A thank you also to [Series Eight](https://serieseight.com) who support and fund my work on Async Alpine, and whose projects provide a great proving ground for previous and experimental versions!
+
+## Contributors
+
+These people have kindly contributed code to Async Alpine:
+
+- [Andy Dennis @scruffymongrel](https://github.com/scruffymongrel)
+- [Yusuf Fauzan @iniznet](https://github.com/iniznet)
+- [@whitter](https://github.com/whitter)
 
 ## Contributing
 
