@@ -19,9 +19,12 @@ A thank you also to [Series Eight](https://serieseight.com) who support and fund
 
 These people have kindly contributed code to Async Alpine:
 
-- [Andy Dennis @scruffymongrel](https://github.com/scruffymongrel)
 - [Yusuf Fauzan @iniznet](https://github.com/iniznet)
+- [Andy Dennis @scruffymongrel](https://github.com/scruffymongrel)
 - [@whitter](https://github.com/whitter)
+- [Adam Weston @awcodes](https://github.com/awcodes)
+- [Kenny Salazar @helio3197](https://github.com/helio3197)
+
 
 ## Contributing
 
