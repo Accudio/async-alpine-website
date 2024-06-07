@@ -49,6 +49,13 @@ const items = [
 		"author": "William Hibberd",
 		"authorUrl": "https://twitter.com/williamhibberd",
 		"image": "./src/assets/img/the-house-group.png"
+	},
+	{
+		"title": "Harbour House",
+		"url": "https://harbourhouse.org.uk/",
+		"author": "William Hibberd",
+		"authorUrl": "https://twitter.com/williamhibberd",
+		"image": "./src/assets/img/harbour-house.png"
 	}
 ]
 
