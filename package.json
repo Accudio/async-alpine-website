@@ -20,7 +20,7 @@
     "@11ty/eleventy-img": "^2.0.1",
     "@11ty/eleventy-plugin-syntaxhighlight": "^4.0.0",
     "@11ty/eleventy-plugin-vite": "^2.0.0-canary.1",
-    "alpinejs": "^3.10.5",
+    "alpinejs": "^3.14.1",
     "autoprefixer": "^10.4.7",
     "cheerio": "^1.0.0-rc.12",
     "cssnano": "^5.1.12",

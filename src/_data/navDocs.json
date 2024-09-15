@@ -4,6 +4,10 @@
 		"url": "/docs/"
 	},
 	{
+		"title": "Upgrade Guide",
+		"url": "/docs/upgrade/"
+	},
+	{
 		"title": "Installation",
 		"url": "/docs/install/",
 		"subitems": [

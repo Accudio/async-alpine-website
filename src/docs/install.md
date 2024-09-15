@@ -14,7 +14,7 @@ Which method you use will depend on how you prefer to use and import Alpine.js.
 If you load Alpine from a CDN like [jsdelivr](https://www.jsdelivr.com/package/npm/async-alpine) with a script tag you can load Async Alpine via the same method:
 
 ```html
-<script defer src="https://cdn.jsdelivr.net/npm/async-alpine@1.x.x/dist/async-alpine.script.js"></script>
+<script defer src="https://cdn.jsdelivr.net/npm/async-alpine@2.x.x/dist/async-alpine.script.js"></script>
 <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
 ```
 
@@ -28,12 +28,11 @@ Install from [npm](https://www.npmjs.com/package/async-alpine) with:
 npm install async-alpine
 ```
 
-Import it into your bundle alongside Alpine and run `AsyncAlpine.init(Alpine)` and `AsyncAlpine.start()` before `Alpine.start()`:
+Import it into your bundle alongside Alpine and run `Alpine.plugin(AsyncAlpine)` before `Alpine.start()`:
 
 ```js
 import AsyncAlpine from 'async-alpine';
 import Alpine from 'alpinejs';
-AsyncAlpine.init(Alpine);
-AsyncAlpine.start();
+Alpine.plugin(AsyncAlpine);
 Alpine.start();
 ```
