@@ -40,7 +40,7 @@
   },
   "dependencies": {
     "@netlify/functions": "^1.4.0",
-    "async-alpine": "^0.5.4",
+    "async-alpine": "^2.0.0",
     "csso": "^5.0.5",
     "node-fetch": "^3.3.1"
   }

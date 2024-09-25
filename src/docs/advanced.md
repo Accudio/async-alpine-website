@@ -46,7 +46,7 @@ For a script installation, advanced options can be specified by setting `window.
 
 | Option Name          | property           | Default | Notes |
 | -------------------- | ------------------ | ------- | ----- |
-| Default Strategy     | `defaultStrategy`  | `eager` | Allows changing the strategy used when the `ax-load` attribute is empty. |
+| Default Strategy     | `defaultStrategy`  | `eager` | Allows changing the strategy used when the `x-load` attribute is empty. |
 | Keep Relative URLs   | `keepRelativeURLs` | `false` | Don't convert relative URLs to be relative to the document. |
 
 ## Asset Loading {id=assets}

@@ -36,8 +36,7 @@ module.exports = config => {
 			const parent = $(snippet).wrap(`<div
 				class="b-code"
 				x-data="code"
-				ax-load="idle"
-				x-ignore
+				x-load="idle"
 			></div>`)
 			$(parent).append('<div class="b-code__copy hidden"></div>')
 		}
