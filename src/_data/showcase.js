@@ -56,6 +56,13 @@ const items = [
 		"author": "William Hibberd",
 		"authorUrl": "https://twitter.com/williamhibberd",
 		"image": "./src/assets/img/harbour-house.png"
+	},
+	{
+		"title": "Ruth Badger Consultancy",
+		"url": "https://ruthbadger.com/",
+		"author": "William Hibberd",
+		"authorUrl": "https://twitter.com/williamhibberd",
+		"image": "./src/assets/img/ruthbadger.png"
 	}
 ]
 
