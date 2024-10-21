@@ -35,8 +35,8 @@ a normal alpine component until it's visible -->
 Advanced options are provided with the `Alpine.asyncOptions()` function as an object. As an example here we change the default loading strategy:
 
 ```js
-AsyncAlpine.init(Alpine, {
-  defaultStrategy: 'visible'
+Alpine.asyncOptions({
+	defaultStrategy: 'media (max-width:800px)'
 })
 ```
 
