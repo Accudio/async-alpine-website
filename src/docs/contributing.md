@@ -25,6 +25,7 @@ These people have kindly contributed code to Async Alpine:
 - [Adam Weston @awcodes](https://github.com/awcodes)
 - [Kenny Salazar @helio3197](https://github.com/helio3197)
 - [Simone Todaro @SimoTod](https://github.com/SimoTod)
+- [Ralph J. Smit @ralphjsmit](https://github.com/ralphjsmit)
 
 
 ## Contributing
